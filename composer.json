@@ -1,0 +1,25 @@
+{
+    "name": "inisire/logging",
+    "keywords": ["php", "logging"],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "psr/event-dispatcher": "^1.0",
+        "psr/log": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "inisire/*": "source",
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "inisire\\Logging\\": "src/"
+        }
+    }
+}
